@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        int i;
+        int[] vetor = new int[5];
+        
+        for(i = 0; i < vetor.length; i++) {
+            System.out.printf("Informe elemento [%d]: ", i + 1);
+            vetor[i] = scanner.nextInt();
+        }
+        
+        System.out.printf("\nElementos do vetor:\n");
+        
+        for(i = 0; i < 5; i++) {
+            System.out.printf("%d\n", vetor[i]);
+        }
+        
+        scanner.close();
+    }
+}

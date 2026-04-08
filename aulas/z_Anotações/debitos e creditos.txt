@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        float operacao, saldo_inicial, saldo_final = 0;
+        float cpmf, creditos = 0, debitos = 0;
+        
+        System.out.println("Digite o saldo inicial: ");
+            saldo_inicial = scanner.nextFloat();
+        
+        do{
+            System.out.println("Credite ou debite: ");
+            operacao = scanner.nextFloat();
+            
+            if(operacao > 0) {
+                creditos += operacao;
+            } else {
+                debitos += operacao;
+            }
+    
+        }while(operacao != 0);
+        
+        cpmf = (debitos * -1) * 0.004f;
+        saldo_final += saldo_inicial + creditos + debitos - cpmf;
+        
+        System.out.println("------------------");
+        System.out.printf("\nSaldo inicial: %.2f", saldo_inicial);
+        System.out.printf("\nValor de credito: %.2f", creditos);
+        System.out.printf("\nValor de debito: %.2f", debitos * -1);
+        System.out.printf("\nValor do C.P.M.F: %.2f", cpmf);
+        System.out.printf("\nSaldo final: %.2f", saldo_final);
+    }
+}
+
+// Escreva um programa que dado o saldo inicial e uma série de operações de crédito/débito (identificadas com 
+valores positivos ou negativos e finalizada com zero), informe o total de créditos, o total de débitos, 
+a C.P.M.F. paga (0,40% do total de débitos) e o saldo final da conta.

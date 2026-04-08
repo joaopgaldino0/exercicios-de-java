@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Collections;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<String> nomes = new ArrayList<>();
+        
+        nomes.add("Ana");
+        nomes.add("Marcelo");
+        nomes.add("William");
+        nomes.add("André");
+        nomes.add("Nicolly");
+        
+        nomes.set(1, "Thiago");
+        nomes.remove(3);
+        
+        System.out.print("Informe um nome: ");
+        nomes.add(scanner.next());
+        
+        System.out.print(nomes);
+        System.out.print("\nTamanho da lista: " + nomes.size() + " nomes\n");
+        
+        System.out.print("\nLista com 'for':\n");
+        for(int i = 0; i < nomes.size(); i++) {
+            System.out.println(nomes.get(i));
+        }
+        
+        System.out.print("\nLista com 'collections':\n");
+        Collections.reverse(nomes); //inverte os valores
+        System.out.print(nomes); 
+        
+        scanner.close();
+    }
+}

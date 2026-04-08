@@ -1,0 +1,21 @@
+--- Java:
+
+-- sintaxe básica =
+	class Exemplo {
+		public static void main(String [] args) {
+		}
+	}
+
+-- permite ler dados com o scanner =
+	import java.util.Scanner;
+	Scanner scanner = new Scanner(System.in);
+
+-- para usar array =
+	import java.util.ArrayList;
+	ArrayList<String> nomes = new ArrayList<>();
+
+-- para printar normal =
+	System.out.print("...");
+
+-- para printar com % =
+	System.out.printf("%d %f %c %s", x);

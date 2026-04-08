@@ -1,0 +1,47 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Collections;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<String> nomes = new ArrayList<>();
+        
+        nomes.add("Carlos");
+        nomes.add("Bruno");
+        nomes.add("Ana");
+        nomes.add("Fernando");
+        nomes.add("Diego");
+        
+        System.out.print("Nomes ate o momento:\n");
+        System.out.print(nomes);
+        
+        
+        nomes.set(4, "Helena");
+        nomes.set(0, "Gustavo");
+        
+        if(nomes.contains("Fernando")) {
+            System.out.println("\nFernando esta na lista.\n");
+        }
+        
+        nomes.remove("Ana");
+        Collections.sort(nomes);
+        System.out.print("\nNomes agora:\n");
+        System.out.print(nomes);
+        
+        nomes.clear();
+        System.out.print("\nNomes por ultimo:\n");
+        System.out.print(nomes);
+        
+        
+        scanner.close();
+    }
+}
+
+//Crie uma lista e adicione o nome de 5 pessoas: Carlos, Bruno, Ana, Fernando e Diego. Em seguida:
+//Acrescente o nome "Helena" ao final da lista.
+//Acrescente o nome "Gustavo" no inicio da lista.
+//Verifique se o nome "Fernando" está presente na lista.
+//Exclua o nome "Ana" da lista.
+//Ordene a lista em ordem crescente.
+//Remova todos os nomes da lista.

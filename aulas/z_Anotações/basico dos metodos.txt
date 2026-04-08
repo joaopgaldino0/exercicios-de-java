@@ -1,0 +1,10 @@
+class Main {
+    public static float media(int num1, int num2) {
+        return (num1 + num2) / 2.0f;
+    }
+
+    public static void main(String[] args){
+        float resultado = media(5, 12);
+        System.out.println(resultado);
+    }
+}
