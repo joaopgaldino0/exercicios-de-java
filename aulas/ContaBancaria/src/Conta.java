@@ -1,8 +1,12 @@
-
-
 public class Conta {
-    public static void main(String[] args) throws Exception {
-        
+    public static void main(String[] args) {
+        ContaBancaria conta = new ContaBancaria("João");
+
+        conta.depositar(500);
+        System.out.println();
+        conta.sacar(200);
+        System.out.println();
+        conta.sacar(400);
     }
 }
 
