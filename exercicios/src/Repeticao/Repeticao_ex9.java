@@ -32,6 +32,8 @@ class Repeticao_ex9 {
         System.out.printf("\nValor de debito: %.2f", debitos * -1);
         System.out.printf("\nValor do C.P.M.F: %.2f", cpmf);
         System.out.printf("\nSaldo final: %.2f", saldo_final);
+
+        scanner.close();
     }
 }
 
