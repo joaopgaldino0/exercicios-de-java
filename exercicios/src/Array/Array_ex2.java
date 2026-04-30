@@ -9,18 +9,17 @@ class Array_ex2 {
         ArrayList<Integer> pares = new ArrayList<>();
         ArrayList<Integer> impares = new ArrayList<>();
 
-        System.out.println("Digite 5 números:");
         for(int i = 1; i <= 5; i++){
             System.out.printf("Informe numero [%d]: ", i);
-            numeros.add(scanner.nextInt());
-        }
+            int numero = scanner.nextInt();
 
-        for(int elemento : numeros){
-            if(elemento % 2 == 0){
-                pares.add(elemento);
+            numeros.add(numero);
+
+            if(numero % 2 == 0){
+                pares.add(numero);
             }
             else{
-                impares.add(elemento);
+                impares.add(numero);
             }
         }
 
