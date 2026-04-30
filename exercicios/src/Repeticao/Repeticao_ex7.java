@@ -1,6 +1,7 @@
+package Repeticao;
 import java.util.Scanner;
 
-class repeticao_ex7 {
+class Repeticao_ex7 {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         int numerador = 1, denominador = 100;

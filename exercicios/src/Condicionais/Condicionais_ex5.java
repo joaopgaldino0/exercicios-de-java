@@ -1,6 +1,7 @@
+package Condicionais;
 import java.util.Scanner;
 
-class condicionais_ex5 {
+class Condicionais_ex5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

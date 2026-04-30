@@ -1,4 +1,5 @@
-class repeticao_ex1 {
+package Repeticao;
+class Repeticao_ex1 {
     public static void main(String[] args){
 
         System.out.println("Números de 1 a 10:");

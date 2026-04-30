@@ -1,4 +1,5 @@
-class repeticao_ex2 {
+package Repeticao;
+class Repeticao_ex2 {
     public static void main(String[] args){
         int i;
 

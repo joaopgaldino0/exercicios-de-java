@@ -1,6 +1,7 @@
+package Repeticao;
 import java.util.Scanner;
 
-class repeticao_ex4 {
+class Repeticao_ex4 {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         int num;

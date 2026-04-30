@@ -1,6 +1,7 @@
+package Sequenciais;
 import java.util.Scanner;
 
-class sequenciais_ex3 {
+class Sequenciais_ex3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double lata = 0.350;

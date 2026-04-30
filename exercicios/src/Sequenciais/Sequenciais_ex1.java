@@ -1,6 +1,7 @@
+package Sequenciais;
 import java.util.Scanner;
 
-class sequenciais_ex1 {
+class Sequenciais_ex1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

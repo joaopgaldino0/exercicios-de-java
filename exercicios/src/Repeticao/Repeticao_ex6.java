@@ -1,4 +1,5 @@
-class repeticao_ex6 {
+package Repeticao;
+class Repeticao_ex6 {
     public static void main(String[] args){
         int anterior = 1, atual = 1;
 
